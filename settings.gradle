@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    String storageUrl = "https://storage.googleapis.com"
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "$storageUrl/download.flutter.io"
+        }
+        maven {
+            url 'D:/Proyecto/android/youtube_player_module/build/host/outputs/repo'
+        }
+    }
+}
+rootProject.name = "youtube_player"
+include ':app'
+
